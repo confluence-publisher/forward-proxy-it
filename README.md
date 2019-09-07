@@ -1,4 +1,4 @@
-# Docker Image for Proxy-based Tests
+# Docker Image for Forward Proxy-based Tests
 
 This Docker image provides a configurable HTTPS forward proxy with optional support for basic authentication useful for
 testing publishing documentation to Confluence via a forward proxy, e.g. as part of integration tests based on test
