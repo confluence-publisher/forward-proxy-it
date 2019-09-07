@@ -29,10 +29,10 @@ Run the following command to build and push the image:
 ## Run Forward Proxy Integration Test Image
 Run the following command to start the container (with basic authentication enabled, running on port 8443):
 
-`docker run --rm -d -p8443:8443 \
-  -e PROXY_HOST=proxy.host \
-  -e PROXY_PORT=8443 \
-  -e BASIC_AUTH=on \
-  -e BASIC_USERNAME=proxy-user \
-  -e BASIC_PASSWORD=proxy1234 \
+`docker run --rm -d -p8443:8443
+  -e PROXY_HOST=proxy.host
+  -e PROXY_PORT=8443
+  -e BASIC_AUTH=on
+  -e BASIC_USERNAME=proxy-user
+  -e BASIC_PASSWORD=proxy1234
   confluencepublisher/forward-proxy-it:<version>`
