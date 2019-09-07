@@ -12,7 +12,7 @@ openssl req -new -x509 -sha256 -nodes -days 1024 -subj "/CN=${PROXY_HOST}" -keyo
 
 COMMAND="${COMMAND} --key /ssl/tls.key --cert /ssl/tls.crt"
   
-if [ "${BASIC_AUTH}" == "on" ]; then
+if [ "${BASIC_AUTH}" = "on" ]; then
   echo "enabling basic auth support"
   COMMAND="${COMMAND} --user ${BASIC_USERNAME} --pass ${BASIC_PASSWORD}"
 fi
